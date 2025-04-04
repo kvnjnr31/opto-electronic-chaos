@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Low Voltage Innovations</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Ubuntu', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0c0c0c;
+      color: #e0e0e0;
+    }
+
+    header {
+      background-color: #2e2eff;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: #ccc;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ccc;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: white;
+    }
+
+    .banner-area {
+      background-color: #0c0c0c;
+      height: 500px;
+      background: url('images/attractor.png') no-repeat center;
+      background-size: contain;
+    }
+
+    /* === Services Section === */
+    #services {
+      background-color: #111;
+      padding: 60px 40px;
+    }
+
+    #services h2 {
+      color: #ffa500;
+      font-size: 2rem;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background-color: #1b1b1b;
+      border-left: 4px solid #ffa500;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .service-card h3 {
+      color: #00d0ff;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #eee;
+    }
+
+    .cta-button {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .cta-button a {
+      background-color: #007bff;
+      padding: 12px 24px;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button a:hover {
+      background-color: #0056b3;
+    }
+
+    /* === Footer === */
+    footer {
+      padding: 20px;
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+    }
+
+    .footer-logos img {
+      height: 50px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">AI Low Voltage Innovations</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../about.html">ABOUT</a></li>
+        <li><a href="/pages/projects.html">PROJECTS</a></li>
+        <li><a href="/pages/data.html">DATA</a></li>
+	<li><a href="/pages/modeling.html">MODELING</a></li>
+        <li><a href="../contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="banner-area">
+    <!-- Attractor graphic or canvas -->
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Embedded Systems</h3>
+        <p>Custom microcontroller-based system design and firmware development for real-time control and monitoring.</p>
+      </div>
+      <div class="service-card">
+        <h3>AI Signal Processing</h3>
+        <p>Real-time signal classification, noise filtering, and adaptive algorithms using advanced AI models.</p>
+      </div>
+      <div class="service-card">
+        <h3>Optoelectronic Feedback</h3>
+        <p>Design and implementation of bistable optoelectronic circuits for feedback-driven dynamics and hysteresis.</p>
+      </div>
+      <div class="service-card">
+        <h3>Data Visualization</h3>
+        <p>Interactive dashboards and live data feeds with clear analytics for smart decision making.</p>
+      </div>
+    </div>
+
+    <div class="cta-button">
+      <a href="pages/data.html">View Live Data</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Certified Disabled Veteran Business Enterprise (DVBE) | Veteran-Owned Small Business (VOSB)</p>
+      <div class="footer-logos">
+        <img src="images/dvbe-logo.png" alt="DVBE Certified" />
+        <img src="images/vosb-logo.png" alt="Veteran-Owned Business" />
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

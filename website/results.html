@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optoelectronic Feedback System</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #121212; color: white; }
+        .container { width: 80%; margin: auto; }
+        .card { background: #1e1e1e; padding: 20px; margin: 20px; border-radius: 10px; }
+        h1, h2 { color: #f39c12; }
+        .data { font-size: 1.2em; color: #00ffcc; }
+    </style>
+    <script>
+        function fetchData() {
+            fetch('/data.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("photon_voltage").innerText = data.photodiode_voltage + " V";
+                    document.getElementById("laser_status").innerText = data.laser_status;
+                });
+        }
+        setInterval(fetchData, 2000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Optoelectronic Feedback System</h1>
+        <div class="card">
+            <h2>Live System Status</h2>
+            <p>Photodiode Voltage: <span class="data" id="photon_voltage">Loading...</span></p>
+            <p>Laser Status: <span class="data" id="laser_status">Loading...</span></p>
+        </div>
+        <div class="card">
+            <h2>Experimental Analysis</h2>
+            <p>📡 <a href="/hysteresis_plot.png" target="_blank">View Hysteresis Curve</a></p>
+            <p>📈 <a href="/live_plot.png" target="_blank">Live Data Plot</a></p>
+        </div>
+    </div>
+</body>
+</html>
